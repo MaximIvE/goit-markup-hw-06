@@ -28,10 +28,10 @@
 *::after {
   box-sizing: border-box;
 } */
-*,
+/* *,
 *:focus{
   outline-color: var(--p-title-color);
-}
+} */
 
 body {
   margin: 0;
