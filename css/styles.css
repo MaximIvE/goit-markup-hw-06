@@ -569,6 +569,15 @@ border-radius: 0px 0px 4px 4px;
   padding-bottom: 60px;
   background-color: var(--footer-color);
 }
+.footer-block{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer-contact-group{
+  display:flex;
+  align-items: baseline;
+}
 .logo-footer{
   color: var(--background);
 
@@ -598,7 +607,6 @@ border-radius: 0px 0px 4px 4px;
 }
 .footer-cont{
   color: var(--footer-cont-color);
-
   transition-property: color;
   transition-duration: var(--effect-time);
   transition-timing-function: var(--function-time); 
@@ -616,17 +624,12 @@ border-radius: 0px 0px 4px 4px;
 .footer-cont:focus{
   color: var(--footer-hover-text-two);
 }
-.footer-block{
+
+/* .footer-conact-group{
   display: flex;
-  align-items: baseline;
-}
-.footer-conact-group{
-  display: flex;
-  align-items: baseline;
-}
+} */
 .footer-links-block{
-  margin-left: 70px;
-  
+  margin-left: 70px;  
 }
 .footer-icons-title{
   margin-bottom: 20px;
@@ -650,12 +653,13 @@ border-radius: 0px 0px 4px 4px;
 .footer-subscription{
   margin-left:93px;
   display: flex;
-  
+  flex-grow: 1;
 
 }
 .subscript-elements{
   display:flex;
   justify-content: space-between;
+  margin-top:20px;
 }
 .subscript-mail{
    border: 1px solid rgba(255, 255, 255, 0.3);
@@ -663,8 +667,8 @@ border-radius: 0px 0px 4px 4px;
   border-radius: 4px;
   background-color: #2F303A;
   padding:  15px 16px;
-  /* Костыль! Исправить на нормальную автоматическую ширину */
-  min-width: 358px;
+  /* Исправить на нормальную автоматическую ширину */
+  min-width:  358px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -679,7 +683,6 @@ border-radius: 0px 0px 4px 4px;
   padding-right: 28px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   
   font-weight: 700;
   font-size: 16px;
@@ -687,7 +690,9 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   margin-left:12px;
-  border:transparent;
+}
+.subscription-btn:hover{
+  background-color: var(--second-btn-color);
 }
 .subscribe-icon{
   margin-left:10px;

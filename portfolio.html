@@ -178,9 +178,9 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="contanier">
-            <div class="footer-block">   
-                <div class="footer-contact-block">
+        <div class="contanier footer-block">
+            <div class="footer-contact-group">
+                <div class="footer-contact-block"> 
                     <a class="logo logo-footer" href=""><span class="accent-logo">Web</span>Studio</a>
                     <address class="direct-block">
                         <ul>
@@ -223,8 +223,22 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="footer-subscription">
+                <form action="#">
+                    <label for="footer-input" class="title-upercase">Подпишитесь на рассылку</label> 
+                    <div class="subscript-elements">
+                        <input type="email" name="email" id="footer-input" placeholder="E-mail" class="subscript-mail"/>
+                        <button type="submit" class="subscription-btn btn">
+                            Подписаться
+                            <svg class="subscribe-icon" width="24" height="24">
+                                <use href="images/icons.svg#icon-subscribe"></use>
+                            </svg>
+                        </button>
+                    </div>
+                  </form>
+            </div>
         </div>
-        </div>         
     </footer>
 </body>
 </html>
