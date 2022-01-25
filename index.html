@@ -376,7 +376,7 @@
                 <form action="#">
                     <label for="footer-input" class="title-upercase">Подпишитесь на рассылку</label> 
                     <div class="subscript-elements">
-                        <input type="email" name="email" id="footer-input" placeholder="E-mail" class="subscript-mail"/>
+                        <input type="email" name="email" id="footer-input" placeholder="E-mail" maxlength="26" class="subscript-mail"/>
                         <button type="submit" class="subscription-btn btn">
                             Подписаться
                             <svg class="subscribe-icon" width="24" height="24">
@@ -453,11 +453,21 @@
                 placeholder="Введите текст" 
                 class="comment-input form-input"></textarea>
                 
-                <div class="form-checkbox">
-                    <label class="online-check">
-                        <input 
-                        type="checkbox">
-                        Соглашаюсь с рассылкой и принимаю <a href=""class="modal-link">Условия договора</a>
+                <div class="form-field">
+                    <input 
+                    type="checkbox"
+                    name="policy" 
+                    id="policy" 
+                    class="policy-check visually-hidden">
+
+                    <label 
+                    for="policy"
+                    class="check-text">
+                        <span>
+                            <svg class="policy-icon" width="16" height="15">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>Соглашаюсь с рассылкой и принимаю <a href=""class="check-link">Условия договора</a>
                     </label>
                 </div>
 

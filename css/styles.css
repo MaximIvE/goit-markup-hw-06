@@ -817,19 +817,47 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.01em;
 }
 
-.form-checkbox{
+.form-field{
   margin-bottom: 30px;
+  margin-left: 12px;
 }
-.online-check{
+
+.check-text{
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--p-title-color);
+  display:flex;
+  align-items: center;
 }
 
-.modal-link{
-  color:var(--accent-color);
+.check-text span{
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.policy-icon{
+  fill: transparent;
+}
+.policy-check:checked + .check-text span{
+  border:none;
+  background-color: var(--accent-color);
+}
+
+.policy-check:checked + .check-text .policy-icon{
+  fill: #ffffff;
+}
+
+.check-link{
+  color:var(--accent-color);
+  margin-left: 0.3em;
+} 
 
 .modal-btn{
   display:block;
