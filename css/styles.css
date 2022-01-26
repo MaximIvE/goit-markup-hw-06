@@ -817,12 +817,12 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.01em;
 }
 
-.form-field{
+.form-check{
   margin-bottom: 30px;
-  margin-left: 12px;
 }
 
 .check-text{
+  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
