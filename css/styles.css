@@ -804,11 +804,6 @@ border-radius: 0px 0px 4px 4px;
   margin-bottom: 20px;
   height: 120px;
   resize: none;
-  /* transition: placeholder 1000ms var(--function-time); */
-}
-
-.comment-input:focus.comment-input::placeholder{
-  color:var(--accent-color);
 }
 
 .comment-input::placeholder{
